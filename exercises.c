@@ -49,7 +49,7 @@ int *filterEvenNumbers(int arr[], int size, int *newSize) {
   for (int i = 0 ; i < size; i++){
     if (arr[i] % 2 == 0)
     {
-      newArr = (int) realloc(newArr, sizeof(int) + 1);
+      newArr = (int *) realloc(newArr, sizeof(int) + 1);
       *newSize += 1;
     }
   }
