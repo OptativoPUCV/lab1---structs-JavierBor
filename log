@@ -536,3 +536,17 @@ exercises.c:76:8: error: ‘mergeSortedArrays’ defined but not used [-Werror=u
 cc1: all warnings being treated as errors
 Compilation failed
 a37e460
+Thu 14 Mar 2024 11:14:25 PM UTC: 
+ exercises.c | 4 ----
+ 1 file changed, 4 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘mergeSortedArrays’:
+exercises.c:77:12: error: ‘i’ is used uninitialized [-Werror=uninitialized]
+   77 |   while (i < size1 && j < size2)
+      |          ~~^~~~~~~
+exercises.c:77:25: error: ‘j’ is used uninitialized [-Werror=uninitialized]
+   77 |   while (i < size1 && j < size2)
+      |                       ~~^~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+692e145
