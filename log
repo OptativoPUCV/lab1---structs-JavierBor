@@ -594,3 +594,9 @@ exercises.c:188:25: error: assignment to ‘int’ from ‘Nodo *’ {aka ‘str
 cc1: all warnings being treated as errors
 Compilation failed
 ed5fa04
+Thu 14 Mar 2024 11:25:37 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|1
+total_score: 60/70
+9faaf0e
