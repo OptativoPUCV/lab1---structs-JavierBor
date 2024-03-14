@@ -573,3 +573,13 @@ exercises.c:192:1: error: control reaches end of non-void function [-Werror=retu
 cc1: all warnings being treated as errors
 Compilation failed
 90d65b9
+Thu 14 Mar 2024 11:24:56 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘crearListaEnlazada’:
+exercises.c:188:16: error: ‘Nodo’ {aka ‘struct nodo’} has no member named ‘dato’
+  188 |     else actual->dato = temp;
+      |                ^~
+Compilation failed
+fd1646f
