@@ -494,3 +494,15 @@ Thu 14 Mar 2024 10:58:53 PM UTC:
  tests:  0|3
 total_score: 40/70
 88b8a33
+Thu 14 Mar 2024 11:05:57 PM UTC: 
+ exercises.c | 21 ++++++++++++++++++++-
+ 1 file changed, 20 insertions(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘checkSorted’:
+exercises.c:91:9: error: ‘ascendete’ undeclared (first use in this function); did you mean ‘ascendente’?
+   91 |         ascendete = 0;
+      |         ^~~~~~~~~
+      |         ascendente
+exercises.c:91:9: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+f90aa39
