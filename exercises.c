@@ -51,12 +51,14 @@ int *filterEvenNumbers(int arr[], int size, int *newSize) {
     newArr = (int *) realloc(newArr, (*newSize + 1) * sizeof(int));
     if (newArr == NULL) {
       exit(EXIT_FAILURE);
+    }
     if (arr[i] % 2 == 0)
     {
-      }
       newArr[*newSize] = arr[i];
       (*newSize) += 1;
     }
+      
+      
   }
   return newArr;
 }
