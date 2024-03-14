@@ -386,3 +386,17 @@ exercises.c:53:22: error: lvalue required as left operand of assignment
       |                      ^
 Compilation failed
 2450764
+Thu 14 Mar 2024 10:37:24 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:53:7: error: cast from pointer to integer of different size [-Werror=pointer-to-int-cast]
+   53 |       (int) newArr = (int *)realloc(newArr, (*newSize + 1)*sizeof(int));
+      |       ^
+exercises.c:53:20: error: lvalue required as left operand of assignment
+   53 |       (int) newArr = (int *)realloc(newArr, (*newSize + 1)*sizeof(int));
+      |                    ^
+cc1: all warnings being treated as errors
+Compilation failed
+638b3ac
