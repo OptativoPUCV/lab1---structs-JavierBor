@@ -612,3 +612,17 @@ Thu 14 Mar 2024 11:33:01 PM UTC:
  tests:  0|0
 total_score: 70/70
 a960bb4
+Thu 14 Mar 2024 11:33:46 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘crearListaEnlazada’:
+exercises.c:179:46: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘==’ token
+  179 |   Nodo *cabeza = NULL, *actual = NULL, *temp == NULL;
+      |                                              ^~
+exercises.c:182:5: error: ‘temp’ undeclared (first use in this function)
+  182 |     temp = (Nodo *) malloc(sizeof(Nodo));
+      |     ^~~~
+exercises.c:182:5: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+2d84fe7

@@ -176,7 +176,7 @@ typedef struct nodo {
 } Nodo;
 
 Nodo *crearListaEnlazada(int arr[], int size) {
-  Nodo *cabeza = NULL, *actual = NULL, *temp;
+  Nodo *cabeza = NULL, *actual = NULL, *temp == NULL;
 
   for (int i = 0; i < size; i++){
     temp = (Nodo *) malloc(sizeof(Nodo));
