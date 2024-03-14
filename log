@@ -426,3 +426,23 @@ exercises.c:134:9: error: unused variable ‘cabeza’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 54cdee6
+Thu 14 Mar 2024 10:53:52 PM UTC: 
+ exercises.c | 4 ----
+ 1 file changed, 4 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘crearListaEnlazada’:
+exercises.c:131:7: error: unused variable ‘num’ [-Werror=unused-variable]
+  131 |   int num;
+      |       ^~~
+exercises.c:130:39: error: unused variable ‘nuevoNodo’ [-Werror=unused-variable]
+  130 |   Nodo *cabeza = NULL, *temp = NULL, *nuevoNodo = NULL;
+      |                                       ^~~~~~~~~
+exercises.c:130:25: error: unused variable ‘temp’ [-Werror=unused-variable]
+  130 |   Nodo *cabeza = NULL, *temp = NULL, *nuevoNodo = NULL;
+      |                         ^~~~
+exercises.c:130:9: error: unused variable ‘cabeza’ [-Werror=unused-variable]
+  130 |   Nodo *cabeza = NULL, *temp = NULL, *nuevoNodo = NULL;
+      |         ^~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+cdd020e
