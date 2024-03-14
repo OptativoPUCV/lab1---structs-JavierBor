@@ -65,9 +65,16 @@ Descripción: Escribe una función que tome dos arreglos
 ordenados de menor a mayor y sus tamaños, y luego fusione estos dos
 arreglos en un tercer arreglo también ordenado de menor a mayor.
 */
+
+int compare(const void *pivot, const void *elem){
+  int *ptrPivot = (int *)pivot;
+  int *ptrElem = (int *)elem;
+
+  if (*ptrPivot > *ptrElem) return 1;
+  return 0;
+}
 void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2,
                        int result[]) {
-  int temp;
   int sizeFinal = size1 + size2;
   for (int i = 0; i < size1; i++){
     result[i] = arr1[i];
@@ -75,18 +82,7 @@ void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2,
   for (int i = 0; i < size2; i++){
     result[size1+i] = arr2[i];
   }
-   for (int i = 0; i < sizeFinal; i++){
-     for (int j = 0; j < sizeFinal-1; j++)
-       {
-         if (result[i] > result[i + 1])
-         {
-           temp = result[i];
-           result[i] = result[i+1];
-           result[i+1] = temp;
-         }
-       }
-   }
-     
+  qsort(result, sizeFinal, sizeof(int), compare);
                        }
 
 /*
@@ -95,7 +91,23 @@ Descripción: Escribe una función que tome un arreglo y su tamaño,
 y luego devuelva 1 si el arreglo está ordenado en orden ascendente,
   0 si no está ordenado, y -1 si está ordenado en orden descendente.
 */
-int checkSorted(int arr[], int size) { return -2;}
+int checkSorted(int arr[], int size) {
+  bool ascendente = true;
+  bool decreciente = true;
+  
+  for (int i = 0; i < size; i++)
+    {
+      if (arr[i] > arr[i+1]) ascendente = false;
+
+      else if (arr[i] < arr[i+1]) decreciente = false;
+    }
+
+  if (ascendente) return 1;
+  if (decreciente) return -1;
+
+  else
+  return -2;
+}
 
 /*
 Ejercicio 6: Información de una Biblioteca
