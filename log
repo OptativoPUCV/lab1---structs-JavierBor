@@ -219,3 +219,30 @@ exercises.c:113:3: error: ‘else’ without a previous ‘if’
       |   ^~~~
 Compilation failed
 4dc265e
+Thu 14 Mar 2024 09:03:13 PM UTC: 
+ exercises.c | 5 +----
+ 1 file changed, 1 insertion(+), 4 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘checkSorted’:
+exercises.c:99:3: error: unknown type name ‘bool’
+   99 |   bool ascendente = true;
+      |   ^~~~
+exercises.c:6:1: note: ‘bool’ is defined in header ‘<stdbool.h>’; did you forget to ‘#include <stdbool.h>’?
+    5 | #include <string.h>
+  +++ |+#include <stdbool.h>
+    6 | 
+exercises.c:99:21: error: ‘true’ undeclared (first use in this function)
+   99 |   bool ascendente = true;
+      |                     ^~~~
+exercises.c:99:21: note: ‘true’ is defined in header ‘<stdbool.h>’; did you forget to ‘#include <stdbool.h>’?
+exercises.c:99:21: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:100:3: error: unknown type name ‘bool’
+  100 |   bool decreciente = true;
+      |   ^~~~
+exercises.c:100:3: note: ‘bool’ is defined in header ‘<stdbool.h>’; did you forget to ‘#include <stdbool.h>’?
+exercises.c:104:43: error: ‘false’ undeclared (first use in this function)
+  104 |       if (arr[i] > arr[i+1]) ascendente = false;
+      |                                           ^~~~~
+exercises.c:104:43: note: ‘false’ is defined in header ‘<stdbool.h>’; did you forget to ‘#include <stdbool.h>’?
+Compilation failed
+adc92e3
