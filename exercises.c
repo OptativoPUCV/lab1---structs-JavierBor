@@ -179,10 +179,14 @@ Nodo *crearListaEnlazada(int arr[], int size) {
   Nodo *cabeza = NULL, *actual = NULL, *temp = NULL;
 
   for (int i = 0; i < size; i++){
+    //reserva memoria para el nuevo nodo
     temp = (Nodo *) malloc(sizeof(Nodo));
+    //asigna el valor del arreglo al nodo
     temp->numero = arr[i];
+    //el siguiente nodo esta en modo NULL porque es el ultimo
     temp->siguiente = NULL;
 
+    //pregunta si cabeza tiene datos o esta NULL. Si esta NULL se le asigna el nodo temp
     if (cabeza == NULL) cabeza = temp;
     else actual->siguiente = temp;
     actual = temp;
