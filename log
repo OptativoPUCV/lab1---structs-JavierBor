@@ -506,3 +506,9 @@ exercises.c:91:9: error: ‘ascendete’ undeclared (first use in this function)
 exercises.c:91:9: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 f90aa39
+Thu 14 Mar 2024 11:06:18 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|2
+total_score: 50/70
+5391eb9
