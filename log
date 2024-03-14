@@ -406,3 +406,23 @@ Thu 14 Mar 2024 10:44:11 PM UTC:
  tests:  0|3
 total_score: 40/70
 c79a47d
+Thu 14 Mar 2024 10:53:29 PM UTC: 
+ exercises.c | 24 +++++++++---------------
+ 1 file changed, 9 insertions(+), 15 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘crearListaEnlazada’:
+exercises.c:135:7: error: unused variable ‘num’ [-Werror=unused-variable]
+  135 |   int num;
+      |       ^~~
+exercises.c:134:39: error: unused variable ‘nuevoNodo’ [-Werror=unused-variable]
+  134 |   Nodo *cabeza = NULL, *temp = NULL, *nuevoNodo = NULL;
+      |                                       ^~~~~~~~~
+exercises.c:134:25: error: unused variable ‘temp’ [-Werror=unused-variable]
+  134 |   Nodo *cabeza = NULL, *temp = NULL, *nuevoNodo = NULL;
+      |                         ^~~~
+exercises.c:134:9: error: unused variable ‘cabeza’ [-Werror=unused-variable]
+  134 |   Nodo *cabeza = NULL, *temp = NULL, *nuevoNodo = NULL;
+      |         ^~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+54cdee6

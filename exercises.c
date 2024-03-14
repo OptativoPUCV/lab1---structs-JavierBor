@@ -58,6 +58,10 @@ int *filterEvenNumbers(int arr[], int size, int *newSize) {
       (*newSize) += 1;
     }
   }
+  if (*newSize == 0) {
+    free(newArr);
+    return NULL;
+  }
   return newArr;
 }
 
@@ -68,23 +72,9 @@ ordenados de menor a mayor y sus tamaños, y luego fusione estos dos
 arreglos en un tercer arreglo también ordenado de menor a mayor.
 */
 
-int compare(const void *pivot, const void *elem){
-  int *ptrPivot = (int *)pivot;
-  int *ptrElem = (int *)elem;
 
-  if (*ptrPivot > *ptrElem) return 1;
-  return 0;
-}
 void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2,
                        int result[]) {
-  int sizeFinal = size1 + size2;
-  for (int i = 0; i < size1; i++){
-    result[i] = arr1[i];
-  }
-  for (int i = 0; i < size2; i++){
-    result[size1+i] = arr2[i];
-  }
-  qsort(result, sizeFinal, sizeof(int), compare);
                        }
 
 /*
@@ -140,4 +130,8 @@ typedef struct nodo {
   struct nodo *siguiente; // puntero al siguiente nodo
 } Nodo;
 
-Nodo *crearListaEnlazada(int arr[], int size) { return NULL; }
+Nodo *crearListaEnlazada(int arr[], int size) {
+  Nodo *cabeza = NULL, *temp = NULL, *nuevoNodo = NULL;
+  int num;
+  return NULL;
+}
