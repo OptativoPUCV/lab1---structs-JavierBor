@@ -583,3 +583,14 @@ exercises.c:188:16: error: ‘Nodo’ {aka ‘struct nodo’} has no member name
       |                ^~
 Compilation failed
 fd1646f
+Thu 14 Mar 2024 11:25:19 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘crearListaEnlazada’:
+exercises.c:188:25: error: assignment to ‘int’ from ‘Nodo *’ {aka ‘struct nodo *’} makes integer from pointer without a cast [-Werror=int-conversion]
+  188 |     else actual->numero = temp;
+      |                         ^
+cc1: all warnings being treated as errors
+Compilation failed
+ed5fa04
