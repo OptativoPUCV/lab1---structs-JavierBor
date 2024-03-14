@@ -526,3 +526,13 @@ exercises.c:77:25: error: ‘j’ is used uninitialized [-Werror=uninitialized]
 cc1: all warnings being treated as errors
 Compilation failed
 8ac2549
+Thu 14 Mar 2024 11:14:04 PM UTC: 
+ exercises.c | 34 ++++++++++++++++++++++++++++------
+ 1 file changed, 28 insertions(+), 6 deletions(-)
+In file included from test.c:1:
+exercises.c:76:8: error: ‘mergeSortedArrays’ defined but not used [-Werror=unused-function]
+   76 |   void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2,
+      |        ^~~~~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+a37e460
